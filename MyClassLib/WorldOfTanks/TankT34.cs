@@ -11,10 +11,9 @@ namespace MyClassLib.WorldOfTanks
         public int weapon{private set;get;}
         public int armour { private set; get; }
         public int mobility { private set; get; }
+        public static Random r = new Random();
         public TankT34()
         {
-            Random r = new Random();
-
             this.weapon = r.Next(0, 100);
             this.armour = r.Next(0, 100);
             this.mobility = r.Next(0, 100);

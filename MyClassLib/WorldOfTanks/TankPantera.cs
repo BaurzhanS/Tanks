@@ -11,13 +11,12 @@ namespace MyClassLib.WorldOfTanks
         public int weapon { private set; get; }
         public int armour { private set; get; }
         public int mobility { private set; get; }
+        //public static Random r = new Random();
         public TankPantera()
         {
-            Random r = new Random();
-            
-            this.weapon = r.Next(0, 100);
-            this.armour = r.Next(0, 100);
-            this.mobility = r.Next(0, 100);
+            this.weapon = TankT34.r.Next(0, 100);
+            this.armour = TankT34.r.Next(0, 100);
+            this.mobility = TankT34.r.Next(0, 100);
         }
     }
 }
